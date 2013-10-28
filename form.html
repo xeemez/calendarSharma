@@ -1,0 +1,1082 @@
+<html>
+<head>
+<link rel="shortcut icon" href="Calendar.ico" type="image/x-icon">
+<link rel="icon" href="Calendar.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>calendarSharma by XeeMez</title>
+<style>
+ body {
+	font: normal 16px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	background: #E6EAE9;
+}
+#tableDesign
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+table-layout:fixed;
+border-collapse:collapse;
+text-align:center;
+border-color: #555555;
+
+background: -webkit-gradient(linear, left top, left bottom, from(#346d94), to(#15222b));background: -webkit-linear-gradient(left, #346d94, #15222b);background: -moz-linear-gradient(left, #346d94, #15222b);background: -ms-linear-gradient(left, #346d94, #15222b);background: -o-linear-gradient(left, #346d94, #15222b);
+}
+#tableDesign td #tableDesign th 
+{
+font-size:1em;
+border:1px solid black;
+
+}
+
+
+#tableDesign th 
+{
+
+padding-top:5px;
+padding-bottom:4px;
+background-color:#3B4F78;
+color:#CBD5D7;
+}
+#tableDesign td {
+    
+     overflow: hidden;
+    text-overflow: ellipsis;
+   /* white-space: nowrap; */ 
+}
+
+</style>
+<style>
+.aa
+{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#274866;
+width:39px;
+height:30px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}
+.aa:hover,.aa:active
+{
+background-color:#336280;
+}
+.prnext
+{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#274866;
+width:120px;
+-webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}
+.prnext:hover,.prnext:active
+{
+background-color:#336280;
+}
+
+.button {
+   border-top: 1.5px solid #00ff09;
+   background: #346d94;
+   background: -webkit-gradient(linear, left top, left bottom, from(#15222b), to(#346d94));
+   background: -webkit-linear-gradient(top, #15222b, #346d94);
+   background: -moz-linear-gradient(top, #15222b, #346d94);
+   background: -ms-linear-gradient(top, #15222b, #346d94);
+   background: -o-linear-gradient(top, #15222b, #346d94);
+   padding: 2px 14px;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #15151a;
+   background: #15151a;
+   color: #00ff09;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #00ff09;
+   }
+select
+{
+height: 29px;
+border-radius: 28px;
+border: 3px solid #CCC;
+font-weight: 200;
+font-size: 12px;
+font-family: Verdana;
+box-shadow: 1px 1px 5px #CCC;
+color: #05B7FF;
+background:rgb(88,88,88);
+}
+
+
+/*CSS for input textbox and password*/
+
+input[type='text'], input[type='password']
+{
+width: 200px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding: 8px;
+font-weight: 200;
+font-size: 15px;
+font-family: Verdana;
+box-shadow: 1px 1px 5px #CCC;
+color:rgb(90,90,90);
+}
+input[type='text']:focus
+{
+background-color: rgb(50,50,50);
+color:white;
+}
+</style>
+
+<script src="jjj.js" ></script>
+<script>
+       
+function fn1()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b1').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+function fn2()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b2').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn3()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b3').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn4()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b4').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn5()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b5').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn6()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b6').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn7()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b7').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn8()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b8').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn9()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b9').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn10()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b10').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn11()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b11').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn12()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b12').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn13()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b13').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn14()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b14').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn15()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b15').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn16()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b16').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn17()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b17').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn18()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b18').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn19()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b19').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn20()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b20').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn21()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b21').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn22()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b22').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn23()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b23').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn24()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b24').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn25()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b25').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn26()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b26').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn27()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b27').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn28()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b28').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn29()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b29').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+      	     $('#div').toggle('hidden');
+      	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn30()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b30').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+   	     $('#div').toggle('hidden');
+   	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+function fn31()
+{
+    if (document.getElementById('t').value!="")
+    {
+        document.getElementById('t').value =document.getElementById('b31').value+"-"+document.getElementById('m').value+"-"+document.getElementById('y').value;
+        $(function () {
+   	     $('#div').toggle('hidden');
+   	 });
+        return false;
+    }
+    
+    return true;
+    
+}
+
+
+function fun()
+{
+	 $(function () {
+	     $('#div').toggle('hidden');
+	     $('#m').val('01').trigger('change');
+	     $('#y').val('2013').trigger('change');
+	 });
+	}
+    </script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+  <script>
+  $(function() {
+    $( "#div" ).draggable();
+  });
+  </script>
+      <style>
+    .hidden { display: none; }
+    .group
+    {
+    color:white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#346d94), to(#15222b));
+    }
+    </style>
+    <script>
+    $(document).ready(function () {
+        $('.group').hide();
+        $('#div01').show();
+        
+    $(function() {
+    $('.m').change(function() {
+        var val = $(this).val();
+        if (val) {
+            $('div.group:not(#div' + val + ')').slideUp();
+            $('#div' + val).slideDown();
+            if(val=='04'||val=='06'||val=='09'||val=='11'){
+            	$('#b31').fadeOut();
+            }
+            else if(val=='02'){
+           	 $('#feb').fadeOut(500);
+           }
+            else{
+            	 $('#feb').fadeIn();
+            	 $('#b31').fadeIn();
+            }
+        }
+       
+        else {
+            $('div').slideDown();
+        }
+    });
+    });
+});
+</script>
+<script>
+function changeprev(){
+    $(function() {
+        var val = $('.m').val();
+        if (val=='01') {
+            $('div.group:not(#div' + '01' + ')').slideUp();
+            $('#div' + '01').slideDown();
+            $('#m').val('01').trigger('change');
+        } 
+        else  if (val=='02') {
+            $('div.group:not(#div' + '01' + ')').slideUp();
+            $('#div' + '01').slideDown();
+            $('#m').val('01').trigger('change');
+        } 
+        else if (val=='03') {
+            $('div.group:not(#div' + '02' + ')').slideUp();
+            $('#div' + '02').slideDown();
+            $('#m').val('02').trigger('change');
+        } 
+        else if (val=='04') {
+            $('div.group:not(#div' + '03' + ')').slideUp();
+            $('#div' + '03').slideDown();
+            $('#m').val('03').trigger('change');
+        } 
+        else if (val=='05') {
+            $('div.group:not(#div' + '04' + ')').slideUp();
+            $('#div' + '04').slideDown();
+            $('#m').val('04').trigger('change');
+        } 
+        else if (val=='06') {
+            $('div.group:not(#div' + '05' + ')').slideUp();
+            $('#div' + '05').slideDown();
+            $('#m').val('05').trigger('change');
+        } 
+        else if (val=='07') {
+            $('div.group:not(#div' + '06' + ')').slideUp();
+            $('#div' + '06').slideDown();
+            $('#m').val('06').trigger('change');
+        } 
+        else if (val=='08') {
+            $('div.group:not(#div' + '07' + ')').slideUp();
+            $('#div' + '07').slideDown();
+            $('#m').val('07').trigger('change');
+        } 
+        else if (val=='09') {
+            $('div.group:not(#div' + '08' + ')').slideUp();
+            $('#div' + '08').slideDown();
+            $('#m').val('08').trigger('change');
+        } 
+        else if (val=='10') {
+            $('div.group:not(#div' + '09' + ')').slideUp();
+            $('#div' + '09').slideDown();
+            $('#m').val('09').trigger('change');
+        } 
+        else if (val=='11') {
+            $('div.group:not(#div' + '10' + ')').slideUp();
+            $('#div' + '10').slideDown();
+            $('#m').val('10').trigger('change');
+        } 
+        else if (val=='12') {
+            $('div.group:not(#div' + '11' + ')').slideUp();
+            $('#div' + '11').slideDown();
+            $('#m').val('11').trigger('change');
+        } 
+    });
+}
+</script>
+<script>
+function changenext(){
+    $(function() {
+        var val = $('.m').val();
+        if (val=='12') {
+            $('div.group:not(#div' + '12' + ')').slideUp();
+            $('#div' + '12').slideDown();
+            $('#m').val('12').trigger('change');
+        } 
+        else  if (val=='11') {
+            $('div.group:not(#div' + '12' + ')').slideUp();
+            $('#div' + '12').slideDown();
+            $('#m').val('12').trigger('change');
+        } 
+        else if (val=='10') {
+            $('div.group:not(#div' + '11' + ')').slideUp();
+            $('#div' + '11').slideDown();
+            $('#m').val('11').trigger('change');
+        } 
+        else if (val=='09') {
+            $('div.group:not(#div' + '10' + ')').slideUp();
+            $('#div' + '10').slideDown();
+            $('#m').val('10').trigger('change');
+        } 
+        else if (val=='08') {
+            $('div.group:not(#div' + '09' + ')').slideUp();
+            $('#div' + '09').slideDown();
+            $('#m').val('09').trigger('change');
+        } 
+        else if (val=='07') {
+            $('div.group:not(#div' + '08' + ')').slideUp();
+            $('#div' + '08').slideDown();
+            $('#m').val('08').trigger('change');
+        } 
+        else if (val=='06') {
+            $('div.group:not(#div' + '07' + ')').slideUp();
+            $('#div' + '07').slideDown();
+            $('#m').val('07').trigger('change');
+        } 
+        else if (val=='05') {
+            $('div.group:not(#div' + '06' + ')').slideUp();
+            $('#div' + '06').slideDown();
+            $('#m').val('06').trigger('change');
+        } 
+        else if (val=='04') {
+            $('div.group:not(#div' + '05' + ')').slideUp();
+            $('#div' + '05').slideDown();
+            $('#m').val('05').trigger('change');
+        } 
+        else if (val=='03') {
+            $('div.group:not(#div' + '04' + ')').slideUp();
+            $('#div' + '04').slideDown();
+            $('#m').val('04').trigger('change');
+        } 
+        else if (val=='02') {
+            $('div.group:not(#div' + '03' + ')').slideUp();
+            $('#div' + '03').slideDown();
+            $('#m').val('03').trigger('change');
+        } 
+        else if (val=='01') {
+            $('div.group:not(#div' + '02' + ')').slideUp();
+            $('#div' + '02').slideDown();
+            $('#m').val('02').trigger('change');
+        } 
+    });
+}
+</script>
+<script>
+function validate()
+{
+	  
+	 var x7=document.forms["mydob"]["name"].value;
+		if(isNaN(x7)===true)
+			{
+			
+			
+			}
+		else{
+			alert("Name Should Not be Number");
+			document.forms["mydob"]["name"].focus();
+			return false;
+		}
+		if(x7==null || x7=="")
+			{
+			alert("Please Enter some name");
+			document.forms["mydob"]["name"].focus();
+			return false;
+			}
+		if (x7.match(/^[a-zA-Z ]{2,30}$/)) 
+		{
+			
+		}
+		else{
+			alert("Alpha Numeric Names aren't allowed");
+			document.forms["mydob"]["name"].focus();
+			return false;
+		}
+		 var x1=document.getElementById('t').value;
+		
+		 if(x1.match(/^(0[1-9]|1[0-9]|2[0-9]|3[0-1])[\- \/.](?:(0[1-9]|1[0-2])[\- \/.][1-2][0-9][0-9][0-9])$/))
+			{
+			 
+			}
+			else
+				{
+				alert("Wrong Date Format");
+				document.forms["mydob"]["t"].focus();
+				return false;
+				}
+	}
+</script>
+<script>
+$(document).ready(function () {
+	 $(function() {
+		 $('.m').change(function() {      
+		 var yr=$('.y').val();
+		        var val = $('.m').val();
+		       
+		        if (val||yr) {
+        	
+var d1 = new Date(val+'-01-'+yr);
+var d2 = new Date(val+'-02-'+yr);
+var d3 = new Date(val+'-03-'+yr);
+var d4 = new Date(val+'-04-'+yr);
+var d5 = new Date(val+'-05-'+yr);
+var d6 = new Date(val+'-06-'+yr);
+var d7 = new Date(val+'-07-'+yr);
+var weekday=new Array(7);
+weekday[0]="Sun";
+weekday[1]="Mon";
+weekday[2]="Tue";
+weekday[3]="Wed";
+weekday[4]="Thu";
+weekday[5]="Fri";
+weekday[6]="Sat";
+
+var x = document.getElementById("day1");
+x.innerHTML=weekday[d1.getDay()];
+var x = document.getElementById("day2");
+x.innerHTML=weekday[d2.getDay()];
+var x = document.getElementById("day3");
+x.innerHTML=weekday[d3.getDay()];
+var x = document.getElementById("day4");
+x.innerHTML=weekday[d4.getDay()];
+var x = document.getElementById("day5");
+x.innerHTML=weekday[d5.getDay()];
+var x = document.getElementById("day6");
+x.innerHTML=weekday[d6.getDay()];
+var x = document.getElementById("day7");
+x.innerHTML=weekday[d7.getDay()];
+}
+	 });
+	 });
+});
+	 
+</script>
+<script>
+$(document).ready(function () {
+	 $(function() {
+		 $('.y').change(function() {      
+		 var yr=$('.y').val();
+		        var val = $('.m').val();
+		       
+		        if (val||yr) {
+        	
+var d1 = new Date(val+'-01-'+yr);
+var d2 = new Date(val+'-02-'+yr);
+var d3 = new Date(val+'-03-'+yr);
+var d4 = new Date(val+'-04-'+yr);
+var d5 = new Date(val+'-05-'+yr);
+var d6 = new Date(val+'-06-'+yr);
+var d7 = new Date(val+'-07-'+yr);
+var weekday=new Array(7);
+weekday[0]="Sun";
+weekday[1]="Mon";
+weekday[2]="Tue";
+weekday[3]="Wed";
+weekday[4]="Thu";
+weekday[5]="Fri";
+weekday[6]="Sat";
+
+var x = document.getElementById("day1");
+x.innerHTML=weekday[d1.getDay()];
+var x = document.getElementById("day2");
+x.innerHTML=weekday[d2.getDay()];
+var x = document.getElementById("day3");
+x.innerHTML=weekday[d3.getDay()];
+var x = document.getElementById("day4");
+x.innerHTML=weekday[d4.getDay()];
+var x = document.getElementById("day5");
+x.innerHTML=weekday[d5.getDay()];
+var x = document.getElementById("day6");
+x.innerHTML=weekday[d6.getDay()];
+var x = document.getElementById("day7");
+x.innerHTML=weekday[d7.getDay()];
+}
+	 });
+	 });
+});
+	 
+</script>
+
+<style>
+h1{color:#FFFFFF;text-shadow:0px 1px 0px #000,10px -10px 15px #05B7FF, -20px -20px 20px #05B7FF,  0 0 1px #05B7FF, 0 0 2px #05B7FF, 0 0 5px #05B7FF, 0 0 5px #05B7FF, 0 0 5px #05B7FF, 0 0 10px #05B7FF, 0 0 10px #FFFFFF,-2px 0 5px #FFFFFF,0 2px 5px #FFFFFF,0 -2px 5px #FFFFFF;font-family:&#39;Oswald&#39;,Arial,Helvetica,Sans-serif;font-weight:bold;font-size:32px;line-height:32px;}
+</style>
+</head>
+<body>
+<br>
+<div align="center" style="text-align: center;background-color:#003D7B;width:310px;position: absolute;right: 39%;top: 10%;-webkit-border-radius: 28px;-moz-border-radius: 28px;border-radius: 28px; "><font color="white" size=6><b><h1>calendarSharma</h1></b></font></div>
+<form name=mydob action="http://192.168.2.107:8080/mydate/update.jsp">
+<div style="width:512px;height:200px;text-align:center;vertical-align:middle; background-color:rgb(128,128,128); position: absolute;right: 27%;top: 25%;-webkit-border-radius: 28px;-moz-border-radius: 28px;border-radius: 28px;border:double;border-width: thick;color:white">
+<br><table align="center"><tr><td>NAME:</td><td><input type="text" name=name value="Enter Name" onfocus="javascript:if(this.value=='Enter Name'){this.value='';}" onblur="javascript:if(this.value==''){this.value='Enter Name';}"></td><td></td></tr>
+<tr><td>D.O.B.:</td><td><input type="text" id="t" value="DD-MM-YYYY" name="t" onclick="fun()"></td><td><input type="button" value="show Cal" class=button onclick="fun()"></td></tr></table>
+<br><input type="submit" class=button value=insert onclick="return validate()">
+<div id=div class="hidden" style="background-color: rgb(220,220,220);width: 250px;padding: 10px;v-align:center;position: relative;top:-65px;left:350px; background: -webkit-gradient(linear, left top, left bottom, from(#15222b), to(#346d94));background: -webkit-linear-gradient(top, #15222b, #346d94);background: -moz-linear-gradient(top, #15222b, #346d94);background: -ms-linear-gradient(top, #15222b, #346d94);background: -o-linear-gradient(top, #15222b, #346d94);" align="center">
+<TABLE cellpadding="0" cellspacing="0" rules="none" bordercolor="black" height=200px width=250px id=tableDesign> 
+<Tr bgcolor="#007DC6" height=10px>
+<TD COLSPAN="3" ALIGN=center style="color:white;vertical-align:middle">Month<select name="m" class=m id=m style="width:45"><option value="01" selected="selected">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></TD> 
+<TD COLSPAN="3" ALIGN=center style="color:white;vertical-align: middle;">year<select class=y name="y" id=y>
+<option value="2013" selected="selected" >2013</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2008</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+
+
+</select></TD>
+<td><input type="button" value="x" onclick="fun()"></td>
+</Tr>
+<tr style="background: -webkit-gradient(linear, left top, left bottom, from(#15222b), to(#346d94));background: -webkit-linear-gradient(top, #15222b, #346d94);background: -moz-linear-gradient(top, #15222b, #346d94);background: -ms-linear-gradient(top, #15222b, #346d94);background: -o-linear-gradient(top, #15222b, #346d94);">
+<td colspan="3">
+<input type="button" name=prev class=prnext onclick="changeprev()" value="<< prev">
+</td>
+<td>
+</td>
+<td colspan="3" align="right">
+<input type="button" name=next class=prnext onclick="changenext()" value="next >>">
+</td>
+</tr>
+<TR> 
+<TD ALIGN=center colspan="7" height="25px">
+<div id=div01 class=group>January</div>
+<div id=div02 class=group>February</div>
+<div id=div03 class=group>March</div>
+<div id=div04 class=group>April</div>
+<div id=div05 class=group>May</div>
+<div id=div06 class=group>June</div>
+<div id=div07 class=group>July</div>
+<div id=div08 class=group>August</div>
+<div id=div09 class=group>September</div>
+<div id=div10 class=group>October</div>
+<div id=div11 class=group>November</div>
+<div id=div12 class=group>December</div>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=center><input type="button" class="aa" name=b value=01 id="b1" onclick="fn1()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=02 id="b2" onclick="fn2()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=03 id="b3" onclick="fn3()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=04 id="b4" onclick="fn4()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=05 id="b5" onclick="fn5()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=06 id="b6" onclick="fn6()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=07 id="b7" onclick="fn7()"></TD>
+</TR>
+<TR>
+<TD ALIGN=center><input type="button" class="aa" value=08 id="b8" onclick="fn8()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=09 id="b9" onclick="fn9()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=10 id="b10" onclick="fn10()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=11 id="b11" onclick="fn11()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=12 id="b12" onclick="fn12()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=13 id="b13" onclick="fn13()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=14 id="b14" onclick="fn14()"></TD>
+</TR>
+<TR>
+<TD ALIGN=center><input type="button" class="aa" value=15 id="b15" onclick="fn15()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=16 id="b16" onclick="fn16()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=17 id="b17" onclick="fn17()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=18 id="b18" onclick="fn18()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=19 id="b19" onclick="fn19()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=20 id="b20" onclick="fn20()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=21 id="b21" onclick="fn21()"></TD>
+</TR>
+<TR>
+<TD ALIGN=center><input type="button" class="aa" value=22 id="b22" onclick="fn22()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=23 id="b23" onclick="fn23()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=24 id="b24" onclick="fn24()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=25 id="b25" onclick="fn25()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=26 id="b26" onclick="fn26()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=27 id="b27" onclick="fn27()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=28 id="b28" onclick="fn28()"></TD>
+</TR>
+<TR id=feb>
+<TD ALIGN=center><input type="button" class="aa" value=29 id="b29" onclick="fn29()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=30 id="b30" onclick="fn30()"></TD>
+<TD ALIGN=center><input type="button" class="aa" value=31 id="b31" onclick="fn31()"></TD>
+
+<TD ALIGN=center></TD>
+<td></td>
+</TR>
+<tr bgcolor="maroon" style="color:white">
+<TD ALIGN=center><div id=day1></div></TD>
+<TD ALIGN=center><div id=day2></div></TD>
+<TD ALIGN=center><div id=day3></div></TD>
+<TD ALIGN=center><div id=day4></div></TD>
+<TD ALIGN=center><div id=day5></div></TD>
+<TD ALIGN=center><div id=day6></div></TD>
+<TD ALIGN=center><div id=day7></div></TD>
+</tr>
+</TABLE>
+</div>
+</div>
+</form>
+
+</body>
+</html>
