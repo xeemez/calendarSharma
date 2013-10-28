@@ -1,3 +1,3 @@
 calendarSharma
 ==============
-<img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/10/Collective86.png"/>
+Calendar app helps in picking date on just a click and puts it in a text box for easy form submission.
